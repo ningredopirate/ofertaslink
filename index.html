@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OfertasLink | Achadinhos Shopee, Mercado Livre e Amazon</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho e Menu Avançado de Busca -->
+    <header class="header">
+        <div class="container header-top">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-bolt"></i> Ofertas<span>Link</span>
+            </a>
+
+            <!-- Barra de Busca Avançada -->
+            <div class="search-advanced">
+                <select id="filter-store" aria-label="Filtrar por Loja">
+                    <option value="all">Todas as Lojas</option>
+                    <option value="shopee">Shopee</option>
+                    <option value="mercadolivre">Mercado Livre</option>
+                    <option value="amazon">Amazon</option>
+                </select>
+
+                <input type="text" id="search-input" placeholder="Buscar produto, marca ou palavra-chave...">
+
+                <button id="btn-search" type="button">
+                    <i class="fa-solid fa-magnifying-glass"></i> Buscar
+                </button>
+            </div>
+
+            <button id="toggle-admin-btn" class="btn-admin-toggle" title="Adicionar Produto">
+                <i class="fa-solid fa-plus"></i> Novo Link
+            </button>
+        </div>
+
+        <!-- Filtros Secundários (Categoria, Preço e Ordenação) -->
+        <nav class="filter-bar">
+            <div class="container filter-bar-inner">
+                <div class="filter-group">
+                    <label for="filter-category"><i class="fa-solid fa-layer-group"></i> Categoria:</label>
+                    <select id="filter-category">
+                        <option value="all">Todas</option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="casa">Casa & Cozinha</option>
+                        <option value="moda">Moda & Acessórios</option>
+                        <option value="gamer">Setup & Gamer</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="tenis">Tênis</option>
+                        <option value="livros">Livros</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filter-max-price"><i class="fa-solid fa-tag"></i> Até R$:</label>
+                    <input type="number" id="filter-max-price" placeholder="Ex: 250" min="0" step="10">
+                </div>
+
+                <div class="filter-group">
+                    <label for="sort-products"><i class="fa-solid fa-arrow-down-wide-short"></i> Ordenar:</label>
+                    <select id="sort-products">
+                        <option value="recent">Mais Recentes</option>
+                        <option value="price-asc">Menor Preço</option>
+                        <option value="price-desc">Maior Preço</option>
+                    </select>
+                </div>
+
+                <button id="clear-filters" class="btn-clear">Limpar Filtros</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Painel Rápido para Colar Link de Afiliado -->
+    <section id="admin-panel" class="admin-panel hidden">
+        <div class="container">
+            <div class="admin-box">
+                <div class="admin-header">
+                    <h2><i class="fa-solid fa-link"></i> Cadastrar Produto por Link de Afiliado</h2>
+                    <button id="close-admin-btn" class="close-btn">&times;</button>
+                </div>
+
+                <div class="link-fetcher">
+                    <input type="url" id="affiliate-url"
+                        placeholder="Cole aqui o link da Shopee, Mercado Livre ou Amazon...">
+                    <button type="button" id="btn-fetch-link" class="btn-primary">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Carregar Dados do Link
+                    </button>
+                </div>
+                <p id="fetch-status" class="status-msg"></p>
+
+                <!-- Pré-visualização e Ajuste Rápido -->
+                <form id="product-form" class="product-form">
+                    <div class="preview-card">
+                        <img id="preview-img" src="https://placehold.co/300x300/18181b/00f5d4?text=Imagem+do+Produto"
+                            alt="Prévia">
+                        <span id="preview-store-badge" class="badge">Loja</span>
+                    </div>
+
+                    <div class="form-fields">
+                        <div class="field-row">
+                            <div class="field">
+                                <label>Título do Produto</label>
+                                <input type="text" id="prod-title" required
+                                    placeholder="Nome identificado automaticamente">
+                            </div>
+                            <div class="field small">
+                                <label>Valor (R$)</label>
+                                <input type="number" id="prod-price" step="0.01" required placeholder="99.90">
+                            </div>
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field">
+                                <label>URL da Imagem (preenchida automaticamente ou cole aqui)</label>
+                                <input type="url" id="prod-img" required placeholder="https://...">
+                            </div>
+                            <div class="field small">
+                                <label>Loja</label>
+                                <select id="prod-store">
+                                    <option value="shopee">Shopee</option>
+                                    <option value="mercadolivre">Mercado Livre</option>
+                                    <option value="amazon">Amazon</option>
+                                </select>
+                            </div>
+                            <div class="field small">
+                                <label>Categoria</label>
+                                <select id="prod-category">
+                                    <option value="eletronicos">Eletrônicos</option>
+                                    <option value="casa">Casa & Cozinha</option>
+                                    <option value="moda">Moda & Acessórios</option>
+                                    <option value="gamer">Setup & Gamer</option>
+                                    <option value="smartphone">Smartphone</option>
+                                    <option value="tenis">Tênis</option>
+                                    <option value="livros">Livros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-success">
+                                <i class="fa-solid fa-check"></i> Publicar na Vitrine
+                            </button>
+                            <button type="button" id="btn-export-json" class="btn-secondary"
+                                title="Copiar lista para salvar no código">
+                                <i class="fa-solid fa-code"></i> Exportar Lista (JS)
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel de Destaques -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="carousel" id="main-carousel">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide active" style="background: linear-gradient(135deg, #ee4d2d, #ff7337);">
+                        <div class="slide-content">
+                            <span class="slide-tag">SHOPEE OFERTAS</span>
+                            <h2>Achadinhos com Frete Grátis e Cupons</h2>
+                            <p>Seleção diária dos produtos mais vendidos com entrega rápida.</p>
+                            <button onclick="filtrarPorLoja('shopee')" class="btn-slide">Ver Ofertas Shopee</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide"
+                        style="background: linear-gradient(135deg, #ffe600, #f5b800); color: #111;">
+                        <div class="slide-content">
+                            <span class="slide-tag dark">MERCADO LIVRE</span>
+                            <h2>Entrega Full no Mesmo Dia</h2>
+                            <p>Eletrônicos, ferramentas e utilidades com garantia oficial.</p>
+                            <button onclick="filtrarPorLoja('mercadolivre')" class="btn-slide dark">Ver Ofertas Mercado
+                                Livre</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, #131921, #232f3e);">
+                        <div class="slide-content">
+                            <span class="slide-tag amazon">AMAZON PRIME</span>
+                            <h2>Top Eletrônicos e Setup Gamer</h2>
+                            <p>Os melhores preços em hardware, livros e dispositivos inteligentes.</p>
+                            <button onclick="filtrarPorLoja('amazon')" class="btn-slide amazon">Ver Ofertas
+                                Amazon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" id="prev-slide" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-btn next" id="next-slide" aria-label="Próximo">&#10095;</button>
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vitrine de Produtos -->
+    <main class="container main-content">
+        <div class="section-header">
+            <h2><i class="fa-solid fa-fire"></i> Ofertas em Destaque</h2>
+            <span id="results-count">0 produtos encontrados</span>
+        </div>
+
+        <div id="products-grid" class="products-grid">
+            <!-- Os cards serão renderizados via JavaScript -->
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-bolt"></i> Ofertas<span>Link</span></h3>
+                <p>Curadoria independente das melhores promoções da Shopee, Mercado Livre e Amazon em um só lugar.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Lojas Parceiras</h4>
+                <ul>
+                    <li><a href="#" onclick="filtrarPorLoja('shopee'); return false;">Ofertas Shopee</a></li>
+                    <li><a href="#" onclick="filtrarPorLoja('mercadolivre'); return false;">Ofertas Mercado Livre</a>
+                    </li>
+                    <li><a href="#" onclick="filtrarPorLoja('amazon'); return false;">Ofertas Amazon</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Aviso de Afiliado</h4>
+                <p class="disclaimer">Como participante de programas de afiliados (Amazon Associates, Mercado Livre e
+                    Shopee), podemos receber comissões por compras qualificadas sem custo adicional para você.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 OfertasLink - Todos os direitos reservados. Preços sujeitos a alteração nas lojas oficiais.
+            </p>
+            <p>CNPJ: 60.353.627/0001-58</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
