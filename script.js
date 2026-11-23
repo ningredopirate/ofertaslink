@@ -1,6 +1,105 @@
 // Produtos iniciais de exemplo (você pode substituir usando o botão "Exportar Lista")
 const DEFAULT_PRODUCTS = [
     {
+        "id": 1795469702383,
+        "title": "GIGABYTE Placa de vídeo Radeon RX 9050 Gaming OC 8G 8GB GDDR6 WINDFORCE Cooling with Hawk Fan Boost Clock 2760MHz",
+        "price": 2089.05,
+        "store": "amazon",
+        "category": "gpu",
+        "image": "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/8133uBVZwRL._AC_SL1500_.jpg",
+        "url": "https://link.amazon/B0f3DBKCk"
+    },
+    {
+        "id": 1795469586240,
+        "title": "PCYES Placa De Video Rx 550 4GB GDDR5 128 Bits Dual-fan Projeto Edge PVEX5504GBDF",
+        "price": 521.13,
+        "store": "amazon",
+        "category": "gpu",
+        "image": "https://m.media-amazon.com/images/W/BW_MEDIAX_AVIF_MEASUREMENT_1306696-T4/images/I/61lfsM6-RgL._AC_SL1200_.jpg",
+        "url": "https://link.amazon/B03G8AHGJ"
+    },
+    {
+        "id": 1795469338078,
+        "title": "Placa de vídeo para jogos SOYO New RX580 8GB GDDR5, desempenho suave e confiável para atualizações de PC",
+        "price": 716.12,
+        "store": "shopee",
+        "category": "gpu",
+        "image": "https://down-br.img.susercontent.com/file/sg-11134253-8258l-msio8dz1jwg4ab.webp",
+        "url": "https://s.shopee.com.br/7AfMNJj78I"
+    },
+    {
+        "id": 1795468822919,
+        "title": "Placa de Vídeo RTX 3050 6GB Zotac Twin Edge OC GDDR6 96 Bits ZT-A30510H-10L",
+        "price": 1369.17,
+        "store": "shopee",
+        "category": "gpu",
+        "image": "https://down-br.img.susercontent.com/file/sg-11134201-8260q-mmc4mrov5kw09e@resize_w450_nl.webp",
+        "url": "https://s.shopee.com.br/AUvoKtOEGn"
+    },
+    {
+        "id": 1795468580247,
+        "title": "Placa De Vídeo Msi Geforce Rtx 3050 Ventus 2x 6GB Oc",
+        "price": 1567.4,
+        "store": "mercadolivre",
+        "category": "gpu",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_629319-MLU78890470219_092024-F.webp",
+        "url": "https://meli.la/14NJoc1"
+    },
+    {
+        "id": 1795468464015,
+        "title": "Zotac Rtx 5060 Twin Edge Placa Vídeo 8gb Gddr7 Cooling Ar",
+        "price": 3258.33,
+        "store": "mercadolivre",
+        "category": "gpu",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_980986-MLA99925899181_112025-F.webp",
+        "url": "https://meli.la/2kSdPnE"
+    },
+    {
+        "id": 1795468351150,
+        "title": "Placa De Video Amd Radeon Rx580 8gb Gddr5 256 Bits revenger",
+        "price": 781,
+        "store": "mercadolivre",
+        "category": "gpu",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_666807-MLA114125327565_072026-F.webp",
+        "url": "https://meli.la/1gDky4S"
+    },
+    {
+        "id": 1795467870752,
+        "title": "Parafusadeira Furadeira Impacto Sem Fio 21v 2 Bateria 2.000mAh Bivolt Kit Chave Completo Com Maleta brocas chaves carregador",
+        "price": 119.97,
+        "store": "mercadolivre",
+        "category": "ferramentas",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_811925-MLA107404790312_032026-F.webp",
+        "url": "https://meli.la/1bjbGDL"
+    },
+    {
+        "id": 1795467747240,
+        "title": "Parafusadeira Furadeira Tipo 3/8 Sem Fio 2x Baterias 12v 2.0 Ah Bivolt Frequência 50/60hz 2 Funções Com Kit Jogo 2 Bits",
+        "price": 76.91,
+        "store": "mercadolivre",
+        "category": "ferramentas",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_637951-MLA97567830697_112025-F.webp",
+        "url": "https://meli.la/2PeizTK"
+    },
+    {
+        "id": 1795467539992,
+        "title": "Lavadora Lava Jato Portátil Pressão 2 Baterias + Maleta",
+        "price": 94.99,
+        "store": "mercadolivre",
+        "category": "ferramentas",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_710675-MLB89102120983_082025-F-lavadora-lava-jato-portatil-pressao-2-baterias--maleta.webp",
+        "url": "https://meli.la/2P5iBwn"
+    },
+    {
+        "id": 1795467445056,
+        "title": "Lavadora de Alta Pressão Kärcher Compacta 1.500 PSI 1400W 300L/h com Aplicador de Detergente e Lança Regulável",
+        "price": 279,
+        "store": "mercadolivre",
+        "category": "ferramentas",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_746691-MLA118789821329_102026-F.webp",
+        "url": "https://meli.la/2jRfARY"
+    },
+    {
         "id": 1795464414169,
         "title": "O Massacre da Família Hope (Livro)",
         "price": 39.3,
