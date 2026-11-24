@@ -1,6 +1,42 @@
 // Produtos iniciais de exemplo (você pode substituir usando o botão "Exportar Lista")
 const DEFAULT_PRODUCTS = [
     {
+        "id": 1795561671130,
+        "title": "Smartphone Xiaomi Redmi 7A com Firmware Global, 32Gb, 4G, 13MP, Snapdragon 439, 4000mAh",
+        "price": 376.36,
+        "store": "aliexpress",
+        "category": "smartphone",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/S572f05b652784e3f9cb0e18d3c407a08Y.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c4lE6dod"
+    },
+    {
+        "id": 1795560817330,
+        "title": "Chinelos Silenciosos de Verão para Homens e Mulheres, Antiderrapantes, Macios, de EVA, Resistentes a Odor",
+        "price": 6.99,
+        "store": "aliexpress",
+        "category": "moda",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/S0faa57325bcf41d88fc05ba0c5e605d8K.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c4NVQpPb"
+    },
+    {
+        "id": 1795560506780,
+        "title": "Kit 5 Cuecas Boxer Masculinas Adulto Tamanho único",
+        "price": 14.13,
+        "store": "aliexpress",
+        "category": "moda",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/S378ad42475cf4d75bf0c3da79ee74f49w.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c4a4gqJR"
+    },
+    {
+        "id": 1795560115974,
+        "title": "12 Pares de Meias Masculinas Cano Alto Polyester Socks",
+        "price": 31.46,
+        "store": "aliexpress",
+        "category": "moda",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/Sbcd9f3dcd68d445797fb796fe049fa57y.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c3vnDs1T"
+    },
+    {
         "id": 1795559182166,
         "title": "JUHOR Memória RAM DDR4 8GB 3200MHz CL16 High Performance PC Desktop",
         "price": 349.72,
