@@ -2,7 +2,7 @@
 const DEFAULT_PRODUCTS = [
     {
         "id": 1795561671130,
-        "title": "Smartphone Xiaomi Redmi 7A com Firmware Global, 32Gb, 4G, 13MP, Snapdragon 439, 4000mAh",
+        "title": "Celular Xiaomi Redmi 7A com Firmware Global, 32Gb, 4G, 13MP, Snapdragon 439, 4000mAh",
         "price": 376.36,
         "store": "aliexpress",
         "category": "smartphone",
