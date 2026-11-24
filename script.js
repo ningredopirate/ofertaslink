@@ -299,7 +299,7 @@ const DEFAULT_PRODUCTS = [
     },
     {
         "id": 1795456666471,
-        "title": "Cubot Kingkong - resistencia + prova d'agua 128/16gb Estoque Brasil Preto/laranja Pronta entrega",
+        "title": "Celular Cubot Kingkong - resistencia + prova d'agua 128/16gb Estoque Brasil Preto/laranja Pronta entrega",
         "price": 1075.02,
         "store": "shopee",
         "category": "smartphone",
@@ -308,7 +308,7 @@ const DEFAULT_PRODUCTS = [
     },
     {
         "id": 1795456577264,
-        "title": "Redmi 14C 4G 6.88” 256GB 120Hz 50MP 13MP 5160mAh Android 14 Novo Versão Global",
+        "title": "Celular Redmi 14C 4G 6.88” 256GB 120Hz 50MP 13MP 5160mAh Android 14 Novo Versão Global",
         "price": 919.08,
         "store": "shopee",
         "category": "smartphone",
