@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OfertasLink | Achadinhos Shopee, Mercado Livre e Amazon</title>
+    <title>OfertasLink | Shopee, Mercado Livre, Amazon e Shein</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -26,6 +26,7 @@
                     <option value="shopee">Shopee</option>
                     <option value="mercadolivre">Mercado Livre</option>
                     <option value="amazon">Amazon</option>
+                    <option value="shein">Shein</option>
                 </select>
 
                 <input type="text" id="search-input" placeholder="Buscar produto, marca ou palavra-chave...">
@@ -128,6 +129,7 @@
                                     <option value="shopee">Shopee</option>
                                     <option value="mercadolivre">Mercado Livre</option>
                                     <option value="amazon">Amazon</option>
+                                    <option value="shein">Shein</option>
                                 </select>
                             </div>
                             <div class="field small">
@@ -186,6 +188,16 @@
                         </div>
                     </div>
 
+                    <div class="carousel-slide"
+                        style="background: linear-gradient(135deg, white, black); color: #111;">
+                        <div class="slide-content">
+                            <span class="slide-tag dark">SHEIN</span>
+                            <h2>Achadinhos Shein com os Melhores Preços</h2>
+                            <p>Seleção diária das Melhores Ofertas.</p>
+                            <button onclick="filtrarPorLoja('mercadolivre')" class="btn-slide dark">Ver Ofertas Shein</button>
+                        </div>
+                    </div>
+
                     <div class="carousel-slide" style="background: linear-gradient(135deg, #131921, #232f3e);">
                         <div class="slide-content">
                             <span class="slide-tag amazon">AMAZON PRIME</span>
@@ -221,7 +233,7 @@
         <div class="container footer-grid">
             <div class="footer-col">
                 <h3><i class="fa-solid fa-bolt"></i> Ofertas<span>Link</span></h3>
-                <p>Curadoria independente das melhores promoções da Shopee, Mercado Livre e Amazon em um só lugar.</p>
+                <p>Curadoria independente das melhores promoções da Shopee, Mercado Livre, Amazon e Shein em um só lugar.</p>
             </div>
 
             <div class="footer-col">
@@ -231,13 +243,14 @@
                     <li><a href="#" onclick="filtrarPorLoja('mercadolivre'); return false;">Ofertas Mercado Livre</a>
                     </li>
                     <li><a href="#" onclick="filtrarPorLoja('amazon'); return false;">Ofertas Amazon</a></li>
+                    <li><a href="#" onclick="filtrarPorLoja('shein'); return false;">Ofertas Shein</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
                 <h4>Aviso de Afiliado</h4>
-                <p class="disclaimer">Como participante de programas de afiliados (Amazon Associates, Mercado Livre e
-                    Shopee), podemos receber comissões por compras qualificadas sem custo adicional para você.</p>
+                <p class="disclaimer">Como participante de programas de afiliados (Amazon Associatos, Mercado Livre,
+                    Shopee e Shein), podemos receber comissões por compras qualificadas sem custo adicional para você.</p>
             </div>
         </div>
 
