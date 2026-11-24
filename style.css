@@ -8,6 +8,7 @@
     --accent-hover: #00c4a7;
     --shopee: #ee4d2d;
     --ml: #ffe600;
+    --shein: gray;
     --amazon: #ff9900;
     --border: #2d3244;
     --radius: 10px;
@@ -560,6 +561,11 @@ body {
     color: #111;
 }
 
+.badge.shein {
+    background: var(--shein);
+    color: white;
+}
+
 .btn-delete-card {
     position: absolute;
     top: 10px;
@@ -597,7 +603,6 @@ body {
     font-weight: 600;
     margin-bottom: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     flex: 1;
@@ -638,6 +643,11 @@ body {
 .btn-buy.amazon {
     background: var(--amazon);
     color: #111;
+}
+
+.btn-buy.shein {
+    background: var(--shein);
+    color: white;
 }
 
 .btn-buy:hover {

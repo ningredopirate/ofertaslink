@@ -344,6 +344,7 @@ document.getElementById('close-admin-btn').addEventListener('click', () => {
 function detectStoreFromUrl(url) {
     const lower = url.toLowerCase();
     if (lower.includes('shopee') || lower.includes('shp.ee')) return 'shopee';
+    if (lower.includes('shein') || lower.includes('she')) return 'shein';
     if (lower.includes('mercadolivre') || lower.includes('mercadolibre') || lower.includes('mlb')) return 'mercadolivre';
     if (lower.includes('amazon') || lower.includes('amzn')) return 'amazon';
     return 'shopee';
