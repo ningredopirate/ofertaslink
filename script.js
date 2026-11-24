@@ -1,6 +1,24 @@
 // Produtos iniciais de exemplo (você pode substituir usando o botão "Exportar Lista")
 const DEFAULT_PRODUCTS = [
     {
+        "id": 1795541672547,
+        "title": "Grand Theft Auto VI (XBOX Series X|S)",
+        "price": 449.9,
+        "store": "mercadolivre",
+        "category": "gamer",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_648692-MLA122000047237_112026-F.webp",
+        "url": "https://meli.la/1PhJySk"
+    },
+    {
+        "id": 1795541426846,
+        "title": "Rockstar Games Gta Vi Ps5 Edição Padrão",
+        "price": 417.57,
+        "store": "mercadolivre",
+        "category": "gamer",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_733900-MLA120469756224_112026-F.webp",
+        "url": "https://meli.la/2ntwrNR"
+    },
+    {
         "id": 1795469702383,
         "title": "GIGABYTE Placa de vídeo Radeon RX 9050 Gaming OC 8G 8GB GDDR6 WINDFORCE Cooling with Hawk Fan Boost Clock 2760MHz",
         "price": 2089.05,
