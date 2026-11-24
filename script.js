@@ -1,6 +1,60 @@
 // Produtos iniciais de exemplo (você pode substituir usando o botão "Exportar Lista")
 const DEFAULT_PRODUCTS = [
     {
+        "id": 1795552973845,
+        "title": "Tênis Feminino Casual Coração Moda Barata Confortável Macio Delicado Anatômico Ideal Para o Dia a Dia",
+        "price": 45.54,
+        "store": "shein",
+        "category": "tenis",
+        "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/08/14/ff/1786711637273f16a33eb3ebb007bb72afaa2aa1a4_thumbnail_220x293.webp",
+        "url": "https://onelink.shein.com/61/698m1at4misb?ismg_ol=62SAAwl1KRV_01_KOC-C"
+    },
+    {
+        "id": 1795552397950,
+        "title": "Tenis Casual Esportivo Tenis Feminino Casual 34-35-36-37-38-39 Macio Charme Ajuste perfeito Leve",
+        "price": 44.93,
+        "store": "shein",
+        "category": "tenis",
+        "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/07/24/69/1784892395e27324fec6b403f5f9ee154e2c7db87e_thumbnail_220x293.webp",
+        "url": "https://onelink.shein.com/61/698l6fyqohg8?ismg_ol=DcqGuNGxAeW_01_KOC-C"
+    },
+    {
+        "id": 1795550458323,
+        "title": "Máscara Preta USHAS, Fórmula à Prova d'Água de Longa Duração, Escova Espiral 360°, Cria Cílios Volumosos e Encaracolados",
+        "price": 14.39,
+        "store": "shein",
+        "category": "moda",
+        "image": "https://img.ltwebstatic.com/v4/j/spmp/2026/06/22/05/17821185581cbba3fef25e3ad5fc7f8fffc02f022d_thumbnail_405x552.webp",
+        "url": "https://onelink.shein.com/61/698b3m6518wi?ismg_ol=APSpk1LELwr_01_KOC-C"
+    },
+    {
+        "id": 1795544084782,
+        "title": "Console PlayStation5 Slim Disk - Pacote ASTRO BOT e Gran Turismo 7",
+        "price": 4844.9,
+        "store": "mercadolivre",
+        "category": "gamer",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_993854-MLA116830668663_082026-F.webp",
+        "url": "https://meli.la/2BW7EUc"
+    },
+    {
+        "id": 1795541672547,
+        "title": "Grand Theft Auto VI (XBOX Series X|S)",
+        "price": 449.9,
+        "store": "mercadolivre",
+        "category": "gamer",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_648692-MLA122000047237_112026-F.webp",
+        "url": "https://meli.la/1PhJySk"
+    },
+    {
+        "id": 1795541426846,
+        "title": "Rockstar Games Gta Vi Ps5 Edição Padrão",
+        "price": 417.57,
+        "store": "mercadolivre",
+        "category": "gamer",
+        "image": "https://http2.mlstatic.com/D_NQ_NP_2X_733900-MLA120469756224_112026-F.webp",
+        "url": "https://meli.la/2ntwrNR"
+    },
+    {
         "id": 1795469702383,
         "title": "GIGABYTE Placa de vídeo Radeon RX 9050 Gaming OC 8G 8GB GDDR6 WINDFORCE Cooling with Hawk Fan Boost Clock 2760MHz",
         "price": 2089.05,
