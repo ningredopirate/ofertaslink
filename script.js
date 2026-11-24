@@ -1,6 +1,33 @@
 // Produtos iniciais de exemplo (você pode substituir usando o botão "Exportar Lista")
 const DEFAULT_PRODUCTS = [
     {
+        "id": 1795559182166,
+        "title": "JUHOR Memória RAM DDR4 8GB 3200MHz CL16 High Performance PC Desktop",
+        "price": 349.72,
+        "store": "aliexpress",
+        "category": "eletronicos",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/S4801e21c603d495eacc6b62a920621dec.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c2xCfQzT"
+    },
+    {
+        "id": 1795558825295,
+        "title": "HyperX Fury Memória RAM DDR4 8GB 3200MHz Desktop 1.2V",
+        "price": 337.73,
+        "store": "aliexpress",
+        "category": "eletronicos",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/S2fbf411e7f0d46d2870bb1a50037b6fbZ.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c3aJx1Iv"
+    },
+    {
+        "id": 1795558235434,
+        "title": "Placa de Vídeo SOYO AMD Radeon R7 350 4GB GDDR5 PC Game Desktop 128bit PCIe3.0x16 VGA HDMI DVI",
+        "price": 287.24,
+        "store": "aliexpress",
+        "category": "gpu",
+        "image": "https://ae-pic-a1.aliexpress-media.com/kf/Sfa5531380b2c41de810b2242bb27ffcdL.jpg_220x220q75.jpg_.avif",
+        "url": "https://s.click.aliexpress.com/e/_c3HVtvRF"
+    },
+    {
         "id": 1795556753100,
         "title": "Headset Bluetooth Tws M10 F9 C/ Power Bank Digital Screen-Neverdie Store",
         "price": 20.47,
