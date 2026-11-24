@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OfertasLink | Shopee, Mercado Livre, Amazon e Shein</title>
+    <title>OfertasLink | Shopee, Mercado Livre, Amazon, Shein e Aliexpress</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -15,7 +15,7 @@
     <!-- Cabeçalho e Menu Avançado de Busca -->
     <header class="header">
         <div class="container header-top">
-            <a href="#" class="logo">
+            <a href="https://ofertaslink.shop/" class="logo">
                 <i class="fa-solid fa-bolt"></i> Ofertas<span>Link</span>
             </a>
 
@@ -27,6 +27,7 @@
                     <option value="mercadolivre">Mercado Livre</option>
                     <option value="amazon">Amazon</option>
                     <option value="shein">Shein</option>
+                    <option value="aliexpress">Aliexpress</option>
                 </select>
 
                 <input type="text" id="search-input" placeholder="Buscar produto, marca ou palavra-chave...">
@@ -130,6 +131,7 @@
                                     <option value="mercadolivre">Mercado Livre</option>
                                     <option value="amazon">Amazon</option>
                                     <option value="shein">Shein</option>
+                                    <option value="aliexpress">Aliexpress</option>
                                 </select>
                             </div>
                             <div class="field small">
@@ -194,7 +196,17 @@
                             <span class="slide-tag dark">SHEIN</span>
                             <h2>Achadinhos Shein com os Melhores Preços</h2>
                             <p>Seleção diária das Melhores Ofertas.</p>
-                            <button onclick="filtrarPorLoja('mercadolivre')" class="btn-slide dark">Ver Ofertas Shein</button>
+                            <button onclick="filtrarPorLoja('shein')" class="btn-slide dark">Ver Ofertas Shein</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide"
+                        style="background: linear-gradient(135deg, red, black); color: #111;">
+                        <div class="slide-content">
+                            <span class="slide-tag dark">ALIEXPRESS</span>
+                            <h2>Achadinhos AliExpress com os Melhores Preços</h2>
+                            <p>Seleção diária das Melhores Ofertas.</p>
+                            <button onclick="filtrarPorLoja('aliexpress')" class="btn-slide dark">Ver Ofertas AliExpress</button>
                         </div>
                     </div>
 
@@ -233,7 +245,7 @@
         <div class="container footer-grid">
             <div class="footer-col">
                 <h3><i class="fa-solid fa-bolt"></i> Ofertas<span>Link</span></h3>
-                <p>Curadoria independente das melhores promoções da Shopee, Mercado Livre, Amazon e Shein em um só lugar.</p>
+                <p>Curadoria independente das melhores promoções da Shopee, Mercado Livre, Amazon, Shein e Aliexpress em um só lugar.</p>
             </div>
 
             <div class="footer-col">
@@ -243,6 +255,7 @@
                     <li><a href="#" onclick="filtrarPorLoja('mercadolivre'); return false;">Ofertas Mercado Livre</a>
                     </li>
                     <li><a href="#" onclick="filtrarPorLoja('amazon'); return false;">Ofertas Amazon</a></li>
+                    <li><a href="#" onclick="filtrarPorLoja('aliexpress'); return false;">Ofertas AliExpress</a></li>
                     <li><a href="#" onclick="filtrarPorLoja('shein'); return false;">Ofertas Shein</a></li>
                 </ul>
             </div>
@@ -250,7 +263,7 @@
             <div class="footer-col">
                 <h4>Aviso de Afiliado</h4>
                 <p class="disclaimer">Como participante de programas de afiliados (Amazon Associatos, Mercado Livre,
-                    Shopee e Shein), podemos receber comissões por compras qualificadas sem custo adicional para você.</p>
+                    Shopee, Shein e Aliexpress), podemos receber comissões por compras qualificadas sem custo adicional para você.</p>
             </div>
         </div>
 

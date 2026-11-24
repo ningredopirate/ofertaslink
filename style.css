@@ -9,6 +9,7 @@
     --shopee: #ee4d2d;
     --ml: #ffe600;
     --shein: black;
+    --aliexpress: red;
     --amazon: #ff9900;
     --border: #2d3244;
     --radius: 10px;
@@ -561,6 +562,11 @@ body {
     color: #111;
 }
 
+.badge.aliexpress {
+    background: var(--aliexpress);
+    color: white;
+}
+
 .badge.shein {
     background: var(--shein);
     color: white;
@@ -643,6 +649,11 @@ body {
 .btn-buy.amazon {
     background: var(--amazon);
     color: #111;
+}
+
+.btn-buy.aliexpress {
+    background: var(--aliexpress);
+    color: white;
 }
 
 .btn-buy.shein {
