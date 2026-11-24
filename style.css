@@ -36,7 +36,7 @@ body {
 .header {
     background-color: var(--bg-card);
     border-bottom: 1px solid var(--border);
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 100;
 }
