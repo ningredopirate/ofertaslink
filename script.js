@@ -233,8 +233,8 @@ const sortProducts = document.getElementById('sort-products');
 const STORE_LABELS = {
     shopee: "Shopee",
     mercadolivre: "Mercado Livre",
-    amazon: "Amazon"
-    shein: "Shein"
+    amazon: "Amazon",
+    shein: "Shein",
 };
 
 // ==========================================
